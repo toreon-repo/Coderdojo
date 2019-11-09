@@ -71,7 +71,7 @@ void loop()
   Serial.print("cm");
   Serial.println();
   
-   if (cm <= 20)  {fill_solid( &(leds[0]), NUM_LEDS /*number of leds*/, CRGB::Blue); //{whitestrobe(30);
+   if (cm <= 20)  {fill_solid( &(leds[0]), NUM_LEDS /*number of leds*/, CRGB::Red); //{whitestrobe(30);
      FastLED.show();
    
 }
