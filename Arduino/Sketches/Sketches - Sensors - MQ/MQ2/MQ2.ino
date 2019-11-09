@@ -79,9 +79,11 @@ void loop()
   display.setTextSize(2); // Draw 2X-scale text
   display.setTextColor(WHITE);
   display.setCursor(10, 0);
-  display.print(F("CO: "));
+  display.print(F("CO?: "));
   display.print(MQGetGasPercentage(MQRead(MQ_PIN)/Ro,GAS_LPG));
   display.print(F("ppm"));
+  
+  
   display.display();      // Show initial text
   delay(100);
 
